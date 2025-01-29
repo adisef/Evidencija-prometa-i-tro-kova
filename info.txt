@@ -1,0 +1,44 @@
+/evidencija/                // Glavni folder aplikacije
+├── /assets/                // Statički fajlovi (CSS, JavaScript, slike)
+│   ├── /css/               // CSS fajlovi
+│   │   └── style.css
+│   ├── /js/                // JavaScript fajlovi
+│   │   └── main.js
+│   └── /img/               // Slike, ako budu potrebne
+├── /includes/              // Fajlovi koji se učitavaju (npr. konekcija)
+│   ├── csrf.php
+│   ├── auth.class.php
+│   ├── session_middleware.php
+│   └── db.php              // Konekcija s bazom
+├── /views/                 // PHP fajlovi za frontend prikaz
+│   ├── header.php          // Zaglavlje stranica
+│   ├── footer.php          // Footer stranica
+│   ├── prikaz_agenta.php   
+│   ├── unos_agenta.php   
+│   ├── uredi_agenta.php 
+│   ├── unos.php            // Forma za unos podatakaagenta
+│   ├── izvjestaji.php      // Prikaz izvještaja
+│   ├── /lokacije/
+│   │   └── index.php
+│   │   └── /js/
+│   │       └── lokacije.js
+│   │   └── /actions/
+│   │       ├── naselja.php
+│   │       ├── opcine.php
+│   │       └── kanton.php
+│   └── /izvjestaji/
+│       ├── godisnji_pregled.php
+│       ├── mjesecni_izvjestaj.php
+│       ├── pregled_po_lokacijama.php
+│       ├── promet_po_agentu.php
+│       └── statistika_uspjesnosti.php
+├── /controllers/           // Obrada podataka (backend logika)
+│   ├── unos_data.php       // Obrada forme za unos
+│   ├── unos_agenta_data.php // Obrada forme za unos agenta
+│   └── dohvat_data.php     // Dohvaćanje podataka za izvještaje
+├── index.php               // Ulazna tačka aplikacije
+├── create_admin.php  
+├── login.php 
+├── logout.php
+├── unauthorized.php     
+└── README.md               // Dokumentacija o aplikaciji
